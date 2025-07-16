@@ -6,18 +6,18 @@
    cd ~/catkin_ws/src
    git clone git@github.com:soonhyo/baxter_demo.git
    ```
-   also, You need to build jsk_robot
+
+2. Install dependencies:
    ```bash
-   cd ~/catkin_ws/src
-   git clone git@github.com:jsk-ros-pkg/jsk_robot.git
-  
+   cd ~/catkin_ws
+   wstool merge -t src src/baxter_demo/.rosinstall
+   wstool update -t src 
    ```
 
-3. Install dependencies:
-
    ```bash
+   cd ~/catkin_ws
    rosdep update
-   rosdep install --from-paths . --ignore-src -r -y
+   rosdep install --from-paths src --ignore-src -r -y
    ```
 
 3. Build the workspace:
