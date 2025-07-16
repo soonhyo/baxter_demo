@@ -1,13 +1,19 @@
-## ️ Build Instructions
+## ️Build Instructions
 
 1. Clone the repository into your Catkin workspace:
 
    ```bash
    cd ~/catkin_ws/src
-   git clone https://github.com/soonhyo/baxter_demo.git
+   git clone git@github.com:soonhyo/baxter_demo.git
+   ```
+   also, You need to build jsk_robot
+   ```bash
+   cd ~/catkin_ws/src
+   git clone git@github.com:jsk-ros-pkg/jsk_robot.git
+  
    ```
 
-2. Install dependencies:
+3. Install dependencies:
 
    ```bash
    rosdep update
@@ -18,13 +24,13 @@
 
    ```bash
    cd ~/catkin_ws
-   catkin_build baxter_demo
+   catkin build baxter_demo
    source devel/setup.bash
    ```
 
 ---
 
-##  Launch the Demo
+## Launch the Demo
 
 Run the baxter initiation nodes:
 
@@ -38,7 +44,7 @@ roslaunch baxter_demo pcl_demo.launch
 ```
 
 
-### Change rgb parameters in rgb filter 
+## Change rgb parameters in rgb filter 
 
 * Run rqt_reconfigure node
 

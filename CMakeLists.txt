@@ -8,11 +8,11 @@ project(baxter_demo)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  geometry_msg
+  geometry_msgs
   roscpp
   rospy
   sensor_msgs
-  std_msg
+  std_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -107,7 +107,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES baxter_demo
-#  CATKIN_DEPENDS geometry_msg roscpp rospy sensor_msgs std_msg
+#  CATKIN_DEPENDS geometry_msgs roscpp rospy sensor_msgs std_msgs
 #  DEPENDS system_lib
 )
 
