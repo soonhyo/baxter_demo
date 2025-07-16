@@ -4,7 +4,7 @@
 
    ```bash
    cd ~/catkin_ws/src
-   git clone git@github.com:soonhyo/baxter_demo.git
+   git clone https://github.com/soonhyo/baxter_demo.git
    ```
 
 2. Install dependencies:
